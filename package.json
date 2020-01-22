@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple portfolio for developers",
   "version": "0.1.2",
-  "author": "Smakosh <ismai23l@hotmail.com>",
+  "author": "Antanas Tricou <APTricou@gmail.com>",
   "dependencies": {
     "dotenv": "^6.2.0",
     "formik": "^1.4.1",
@@ -38,6 +38,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "buildlive": "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
     "build": "gatsby build",
     "start": "gatsby develop -o",
     "lint": "eslint .",
